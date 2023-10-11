@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test5.html</title>
+    <style>
+        body {
+            background-color: peachpuff;
+        }
+        .container {
+            width: 1000px;
+            /* height: 1000px; */
+            margin: 0 auto;
+            background-color: white;
+        }
+        #maint {
+            width: 1000px;
+            height: 30px;
+            border: 1px solid black ;
+            background-color: gray;
+            z-index: 99;
+        }
+        #mainleft {
+            width: 800px;
+            height: 180px; 
+            border: 1px solid black;
+        }
+        #login { 
+            width:200px;
+            height:200px;
+            border: 1px solid black;
+            background-color: gray;
+            position: relative;
+            left: 800px;
+            bottom: 200px;
+            z-index: 0;
+        }
+        tr {
+            width: 200px;
+            /* height: 150px; */
+        }
+        td {
+            width:200px;
+            /* height: 50px; */
+            padding: 10px;
+            text-align: center;
+        }
+        .imgtitle {
+            width: 200px;
+            /* height: 50px; */
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .maintwo {
+            position: relative;
+            left: 200px;
+            bottom: 80px;
+        }
+        #footer {
+            margin: 0px auto;
+            text-align: center;
+            color: white;
+            width: 1000px;
+            height: 30px;
+            border: 1px solid black; 
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mainone">
+            <div id="maint">메인상단</div>
+            <div id="mainleft"><img src="../../images/10.jpg" width="800px" height="180px"/></div>
+            <div id="login">로그인창</div>
+            
+        </div>
+        <div class="maintwo">
+            <table border="0px" cellpadding="0px" cellsapcing="60px">
+                <tr>
+                    <td><img src="../../images/03.jpg" width="200px"/></td>
+                    <td><img src></td>
+                    <td></td>
+                </tr>
+                <tr class="imgtitle">
+                    <td>그림1제목</td>
+                    <td>그림2제목</td>
+                    <td>그림3제목</td>
+                </tr>
+                <tr>
+                    <td><img src="../../images/03.jpg" width="200px"/></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="imgtitle">
+                    <td>그림4제목</td>
+                    <td>그림5제목</td>
+                    <td>그림6제목</td>
+                </tr>
+                <tr>
+                    <td><img src="../../images/03.jpg" width="200px"/></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="imgtitle">
+                    <td>그림4제목</td>
+                    <td>그림5제목</td>
+                    <td>그림6제목</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footer">메인하단</div>
+    <br/><br/><br/><br/>
+</body>
+</html>

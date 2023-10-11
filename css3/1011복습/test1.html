@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1.html</title>
+    <style>
+        .container {
+            border: 2px solid gray;
+            padding: 20px;
+            margin: 30px;
+            line-height: 50pt;
+        }
+
+        .title {
+            font-weight: bolder;
+            border: 1px solid gold;
+            background-color: slategray;
+        }
+
+        input[type="text"] {
+            color: red;
+            background-color: rgb(117, 210, 30);
+            padding: 50px 50px;
+            margin: 20px;
+            /* border: 1px solid black; */
+        }
+
+        input[type="number"] {
+            background-color: aqua;
+            padding: 5px;
+        }
+
+        input[type="password"] {
+            background-color: rgb(236, 184, 255);
+            padding: 10px 20px 30px 10px
+        }
+
+        .fc {
+            text-align: center;
+        }
+
+        .mid {
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form태그와 CSS</h2>
+    <form class="fc">
+        <div class="container">
+            <div class="gmid">
+                <div>
+                    <label for="mid" class="title">아이디</label>
+                    <input type="text" name="mid" id="mid" placeholder="아이디를 입력하세요" size="15" minlength="2" maxlength="10" autofocus required  class="mid"/>
+                </div>
+            </div>
+            <div class="gpwd">
+                <div>
+                    <label for="pwd" class="title">비밀번호</label>
+                    <input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력하세요"  size="15" minlength="4" maxlength="10" />
+                </div>
+            </div>
+            <div class="gage">
+                <div>
+                    <label for="age" class="title">나이</label>
+                    <input type="number" name="age" id="age" placeholder="나이" min="20" max="99" maxlength="2" value="1" required style="width:200px" />
+                </div>
+            </div>
+            <div class="gaddress">
+                <div>
+                    <label for="address" class="title">주소</label>
+                    <input type="text" name="address" id="address" placeholder="주소를 입력하세요" size="30" />
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="전송하기">
+                <input type="reset" value="다시입력">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
