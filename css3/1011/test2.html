@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2.html</title>
+    <style>
+        div, p {    /*형제선택자는 쉼표 , 로 구분한다. 형제선택자란 동등하다는 의미이다.*/
+            background-color: gold;
+        }
+        span {
+            background-color: red;
+            padding: 20px;
+            margin: 30px;   /*인라인스타일로 지정한 스팬은 블록에 영향을 주지 않는다.*/
+        }
+        div {
+            width: 130px;
+            border: 1px solid black; /*soild는 실선*/
+            /* padding: 20px; */
+            /* padding: 10px 20px 30px 40px; 시계방향*/
+            /* padding: 10px 20px 30px; 왼쪽은 오른쪽과 같은 폭*/
+            /* padding: 10px 20px; 상하 좌우*/
+            padding: 10px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>블록/인라인구조</h2>
+    <div>
+        안녕하세요를레히<br/>
+        반갑습니다람쥐
+    </div>
+    <p> 
+        <span>안녕</span>하세요를레히<br/>
+        반갑습니다람쥐
+    </p>
+    <hr/>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+<head>
+  <title>test6_form.html(폼태그연습)</title>
+</head>
+<body>
+  <h2>폼태그연습</h2>
+  <hr/>
+  <h2>회 원 가 입</h2>
+  <form name="myfrom" method="get" action="#">
+    <table border="1px" cellpadding="10px" cellspacing="0px">
+      <caption><h2><p align="center">회 원 가 입</p></h2></caption>
+      <tr>
+        <th bgcolor="pink"><label for="irum">성명</label></th> 
+        <td><input type="text" name="irum" id="irum" placeholder="이름을입력하세요." autofocus required/></td>
+      </tr> <!-- 텍스트필드 type="text"-->
+      <tr>
+        <th bgcolor="pink"><label for="age">나이</label></th>
+        <td><input type="number" age="age" id="age" value="10" min="10" max="99" required /><td>
+      </tr> <!-- 웹은 무조건 문자이다. 자바에서 integer형변환하기.나이는 사이즈명령어 안됨.-->
+      <tr>
+        <td><label for="nikname">닉네임</label></td> 
+        <td><input type="text" name="nikname" id="nikname" size="5" value="홍장군" required/><td>
+      </tr> <!--기본값 명령어:value-->
+      <tr>
+        <td>비밀번호(8자 이내로입력)</td> 
+        <td><input type="password" name="pwd" maxlength="8" required /></td>
+      </tr> <!--maxlength : 최대길이 지정-->
+      <tr>
+        <td>검색</td>
+        <td><input type="search" name="search" placeholder="검색어를 입력하세요?"/></td>
+      </tr>
+      <tr>
+        <td>이메일</td>
+        <td><input type="eamail" name="email" placeholder="메일 주소를 입력하세요."/></td>
+      </tr>
+      <tr><td>성별</td> 
+        <td><input type="radio" name="gender" value="남자" /> 남자
+        <input type="radio" name="gender" checked value="여자" /> 여자</td>
+      </tr>
+      <tr>
+        <td>카드</td> 
+          <td><input type="checkbox" name="card" value="LG카드" /> LG카드</td>
+          <td><input type="checkbox" name="card" value="삼성카드" /> 삼성카드</td>
+          <td><input type="checkbox" name="card" value="현대카드" /> 현대카드</td>
+          <td><input type="checkbox" name="card" value="신한카드" /> 신한카드</td>
+          <td><input type="checkbox" name="card" value="농협카드" /> 농협카드</td>
+          <td><input type="checkbox" name="card" value="BC카드" /> BC카드</td>
+      </tr>
+      <tr> 
+        <td>직업</td>
+          <td><select name="job">
+            <td><option value="">직업을 선택</option></td>
+            <option value="학생" selected>학생</option>
+            <option value="회사원">회사원</option>
+            <option value="가수">가수</option>
+            <option value="배우">배우</option>
+            <option value="경찰">경찰</option>
+            <option value="자영업">자영업</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>즐겨먹는 음식</td>
+         <td><select name="food" size="5" multiple></td>
+          <option value="바나나" selected>바나나</option>
+          <option value="짜장면">짜장면</option>
+          <option value="짬뽕">짬뽕</option>
+          <option value="치킨">치킨</option>
+          <option value="커피">커피</option>
+       </select>
+      </tr> 
+      <tr>
+      <td>자기소개</td>
+        <td><textarea rows="5" cols="50" name="content" /></textarea></td>
+      </tr>
+      <tr><td>첨부파일</td>
+        <td><input type="file" name="fname" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" bgcolor="yellow">
+          <!--
+          <button type="submit">전송하기</button>
+          <button type="reset">다시입력</button>
+          <button type="button">돌아가기</button>
+          -->
+          <input type="submit" value="전송하기" /> &nbsp;
+          <input type="reset" value="다시입력" /> &nbsp;
+          <input type="button" value="돌아가기" />
+        </td>
+      </tr>
+    </table>
+    <input type="hidden" name="idx" value="1234" />
+  </form>
+</body>
+</html>

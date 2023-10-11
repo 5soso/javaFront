@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>test7_form.html(폼태그연습)</title>
+</head>
+<body>
+  <h2>폼태그 연습</h2>
+  <hr/>
+  <h2>회 원 가 입</h2>
+  <form name="myform" method="post" action="#">
+  <fieldset>
+    <legend>회원가입</legend>
+    <ul>
+      <li>
+        <label for="irum">이름</label>
+        <input type="text" name="irum" id="irum" placeholder="이름을 입력하세요." autofocus>
+      </li>
+      <li>
+        <label for="eamil">이메일</label>
+        <input type="text" name="eamil" id="eamil" placeholder="주소를 입력하세요.">
+      </li>
+      <li>       
+        <input type="button" value="가입하기">
+      </li>
+    </ul>
+    </fieldset>
+    <br/>
+    <fieldset>
+    <legend>추가입력</legend>
+        <label for="irum">성별</label>
+        <input type="radio" name="gender" id="gender" value="남자" checked />남자
+        <input type="radio" name="gender" id="gender" value="여자" />여자 &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="가입하기2" />
+    </fieldset>
+  </form>
+</body>
+</html>

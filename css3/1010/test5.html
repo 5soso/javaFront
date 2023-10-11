@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test5.html</title>
+    <style>
+        
+        * {
+            font-family: "굼서","돋움"; /*글꼴. 굼서가 없으면 돋음체로 사용*/
+            font-size: 10pt; /*전체*/
+        }
+        /* body {
+            font-size: 10pt;
+        } */
+        p {
+            font-size: 12pt;
+        }
+        #mbc { /* id는 # */ 
+            color: red;
+        }
+        .mbc { 
+            color: rgb(4, 177, 211);
+        }
+        p.mbc { /* 혼합 */ 
+            color: rgb(211, 135, 4);
+        }
+        .seoul { /* class는 . */
+            color: rgb(47, 47, 255);
+        }
+    </style>
+</head>
+<body>
+    <h2>스타일 혼용 사용예제</h2>
+    <p>1.안녕</p>
+    <p id="mbc">2.안녕</p>
+    <p>3.안녕</p>
+    <p class="seoul">4.안녕</p>
+    <p>5.안녕</p>
+    <p class="seoul">6.안녕</p>
+    <p>7.안녕</p>
+    <p class="seoul">8.안녕</p>
+    <p>9.안녕</p>
+    <p class="mbc">10.안녕</p> <!-- h3태그가 아닌 p태그만 적용되는 클래스 사용할 때는 25번라인 참조.-->
+    <h3 class="mbc">11.안녕</h3>
+
+    <!-- id와 class의 차이점 -->
+    <!-- class : 하나의 페이지 안에서 같은 이름의 속성으로 여러개를 주고 싶을 때 (반복문 돌리는 구조에서는 무조건 class를 사용한다.)-->
+    <!-- id : 현재 페이지에서 딱 한번만 적용 -->
+</body>

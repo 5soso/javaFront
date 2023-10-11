@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test8.html</title>
+    <style>
+        * {
+            line-height: 25pt;
+        }
+
+        .c1 {
+            color: rgb(0, 255, 47);
+        }
+        .c2 {
+            font-size: 20pt;
+        }
+
+        .c1 {
+            background-color: rgb(255, 0, 0);
+        }
+
+        ol ul ol{ /*자손 선택자 : 공백으로 분리*/
+            background-color: pink;
+        } 
+    </style>
+</head>
+<body>
+    <h2>css 연습</h2>
+    <h3>길동이가 좋아하는 음식 Best 5</h3>
+    <ol>
+        <li>치킨</li>
+        <li>피자</li>
+        <li>과일</li>
+        <ul>
+            <li class="c1">딸기</li>
+            <li class="c1">수박</li>
+            <li class="c1">자두</li>
+            <li class="c1">메론</li>
+        </ul>
+        <li>김밥</li>
+        <ul>
+            <li>참치김밥</li>
+            <ol>
+                <li>치즈참치김밥</li>
+                <li>깻잎참치김밥</li>
+                <li>우엉참치김밥</li>
+            </ol>
+            <li>김치김밥</li>
+            <li>오이김밥</li>
+            <li>치즈김밥</li>
+        </ul>
+        <li>파스타</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test4.html(혼합스타일)</title>
+    <link rel ="stylesheet" type="text/css" href="test.css"> <!--외부스타일과 내부스타일 중에 내부스타일이 우선적용된다.-->
+    <style>
+        h4 {font-size:50pt} /*글자크기 50포인트*/
+        h3 {
+            font-size: 50pt; 
+            color: #000dff
+        }
+        </style>
+        <link rel ="stylesheet" type="text/css" href="test2.css"> <!--위에 외부스타일 수행후, 덮어씌움. 마지막으로 오는 게 우선순위(css에 있는 내용이 같을 때..)-->
+</head>
+<body>
+    <h1>Casecading Style Sheet 연습1</h1>
+    <h2>Casecading Style Sheet 연습2</h2>
+    <h3>Casecading Style Sheet 연습3</h3>
+    <h4>Casecading Style Sheet 연습4(50pt)</h4>
+    <h5>Casecading Style Sheet 연습5</h5>
+    <h6>Casecading Style Sheet 연습6</h6>
+    <h4 style="font-size: 30pt;">Casecading Style Sheet 연습4(30pt)</h4> <!--내부스타일과 인라인 스타일 중 인라인스타일이 우선이다-->
+    <h3 style="color: green;">Casecading Style Sheet 연습3</h3> <!--외부스타일과 인라인 스타일 중 인라인스타일이 우선이다-->
+    
+    <!--스타일 우선순위(동등할 때) : 인라인스타일 > 내부스타일 > 외부스타일-->
+    <!--팀프로젝트는 외부스타일을 많이 사용한다.-->
+</body>
+</html>
