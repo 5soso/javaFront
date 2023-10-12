@@ -1,134 +1,133 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test3.html</title>
-    <style>
-        body {
-            margin: 0px;
-            padding: 0px;
-        }
-        .box {
-            margin: 10px;
-            padding: 20px;
-            border: 2px solid gray;
-        }
-        #box1 {
-            background-color: red;  
-        }
-        #box2 {
-            background-color: orange;
-            width: 300px;  
-        }
-        #box3 {
-            background-color: yellow;
-            width: 300px;
-            height: 100px;
-            /* padding: 50px; */
-            line-height: 100px;     /*텍스트 정렬할 때 line,text 사용하기*/
-            text-align: center;     /*텍스트 정렬할 때 line,text 사용하기*/
-        }
-        #box4 {
-            background-color: greenyellow;
-            margin: 0 auto; /*윈도우에서 정렬*/
-            width: 300px;   /*텍스트에서 정렬*/
-            height: 100px;  /*텍스트에서 정렬*/
-            font-size: 20pt;
-            line-height: 100px;
-            text-align: right;
-        }
-        #box5 {
-            background-color: green;
-            width: 300px;   
-            height: 100px;
-            /* border-style: double; */
-            border-style: outset;
-            border-width: 10px;
-        }
-        #box6 {
-            background-color: skyblue;
-            width: 300px;   
-            height: 100px;
-            border-width: 3px;
-            /* border-radius: 10px; */
-            /* border-radius: 30px 0px; */
-            border-radius: 30px 30px 0px 0px; /*모서리 다듬기*/
-        }
-        #box7 {
-            color: white;
-            background-color: rgb(21, 21, 82);
-            width: 300px;
-            height: 100px;
-            border-width: 2px;
-            overflow: auto; /*글자가 넘쳤을 때 자동으로 안 넘치게 적용*/
-            /* overflow: hidden; 스크롤바 제거*/
-            padding: 5px;
-        }
-        #box8 {
-            background-color: rgba(251, 123, 200, 0.72);
-            width: 300px;
-            height: 100px;
-            font-size: 20px;
-            font-weight: bolder;
-            color: aqua;
-            text-shadow: 10px 5px 10px rgb(0, 0, 255); /*x축, y축, 흐림정도, 그림자색상*/
-        }
-        #box9 {
-            background-color: rgba(255, 22, 181, 0.871);
-            width: 300px;
-            height: 100px;
-            text-transform: lowercase;
-        }
-        #box10 {
-            background-color: rgb(198, 26, 255);
-            width: 300px;
-            height: 100px;
-            text-transform: uppercase;
-            font-size: 25pt;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        #box11 {
-            background-color: rgb(0, 0, 0);
-            width: 300px;
-            height: 100px;
-            color: white;
-            text-transform: uppercase;
-            text-decoration: line-through;
-        }
-        #box12 {
-            width: 200px;
-            overflow: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test3.html</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    .box {
+      margin: 10px;
+      padding: 20px;
+      border: 2px solid gray;
+    }
+    #box1 {
+      background-color: green;
+    }
+    #box2 {
+      background-color: orange;
+      width: 300px;
+    }
+    #box3 {
+      background-color: brown;
+      width: 300px;
+      height: 100px;
+      /* padding: 50px; */
+      line-height: 100px;
+      text-align: center;
+    }
+    #box4 {
+      background-color: pink;
+      margin: 0 auto;
+      width: 300px;
+      height: 100px;
+      line-height: 100px;
+      /* text-align: center; */
+      text-align: right;
+      font-size: 20pt;
+    }
+    #box5 {
+      background-color: skyblue;
+      width: 300px;
+      height: 100px;
+      /* border-style: double; */
+      border-style: dashed;
+      border-width: 10px;
+    }
+    #box6 {
+      background-color: rgb(239, 199, 99);
+      width: 300px;
+      height: 100px;
+      border-width: 3px;
+      /* border-radius: 10px; */
+      /* border-radius: 30px 0px; */
+      border-radius: 30px 30px 0px 0px;
+    }
+    #box7 {
+      background-color: rgb(114, 235, 128);
+      width: 300px;
+      height: 100px;
+      border-width: 2px;
+      overflow: auto;
+      /* overflow: hidden; */
+      padding: 5px;
+    }
+    #box8 {
+      background-color: rgb(114, 235, 128);
+      width: 300px;
+      height: 100px;
+      border-width: 2px;
+      font-size: 25px;
+      font-weight: bolder;
+      color: blue;
+      text-shadow: 5px 3px 2px gray;  /* x축, y축, 흐림정도, 그림자색상 */
+    }
+    #box9 {
+      background-color: rgb(114, 183, 235);
+      width: 300px;
+      height: 100px;
+      text-transform:lowercase;
+    }
+    #box10 {
+      background-color: rgb(106, 140, 122);
+      width: 300px;
+      height: 100px;
+      text-transform:uppercase;
+      font-size: 25pt;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    #box11 {
+      background-color: rgb(235, 227, 114);
+      width: 300px;
+      height: 100px;
+      text-decoration: line-through;
+    }
+    #box12 {
+      width: 200px;
+      overflow: auto;
+    }
+  </style>
 </head>
 <body>
-    <h2>Box Layout</h2>
-    <div class="box" id="box1">1.안녕하세요</div>       <!--클래스는 중복가능, 아이디는 하나만 사용 가능-->
-    <div class="box" id="box2">2.안녕하세요</div>
-    <div class="box" id="box3">3.안녕하세요</div>
-    <div class="box" id="box4">4.안녕하세요</div>
-    <div class="box" id="box5">5.안녕하세요</div>
-    <div class="box" id="box6">6.안녕하세요</div>
-    <div class="box" id="box7">
-        71.안녕하세요<br/>
-        72.안녕하세요<br/>
-        73.안녕하세요<br/>
-        74.안녕하세요<br/>
-        75.안녕하세요<br/>
-        76.안녕하세요<br/>
-        77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요
-        78.안녕하세요<br/>
-        79.안녕하세요<br/>
-        80.안녕하세요<br/>
-    </div>
-    <div class="box" id="box8">8.안녕하세요</div>
-    <div class="box" id="box9">9.Good Moring</div>
-    <div class="box" id="box10">10.Good Moring</div>
-    <div class="box" id="box11">11.good moring</div>
-    <div class="box" id="box12">
-        12.이미지<br/>
-        <img src="../../images/03.jpg" width="300px /">
-    </div>
+  <h2>Box Layout</h2>
+  <div class="box" id="box1">1.안녕하세요</div>
+  <div class="box" id="box2">2.안녕하세요</div>
+  <div class="box" id="box3">3.안녕하세요</div>
+  <div class="box" id="box4">4.안녕하세요</div>
+  <div class="box" id="box5">5.안녕하세요</div>
+  <div class="box" id="box6">6.안녕하세요</div>
+  <div class="box" id="box7">
+    71.안녕하세요<br/>
+    72.안녕하세요<br/>
+    73.안녕하세요<br/>
+    74.안녕하세요<br/>
+    75.안녕하세요<br/>
+    76.안녕하세요<br/>
+    77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요77.안녕하세요<br/>
+    78.안녕하세요<br/>
+    79.안녕하세요<br/>
+    80.안녕하세요<br/>
+  </div>
+  <div class="box" id="box8">8.안녕하세요</div>
+  <div class="box" id="box9">9.Good Morning</div>
+  <div class="box" id="box10">10.Good Morning</div>
+  <div class="box" id="box11">11.Good Morning</div>
+  <div class="box" id="box12">
+    12.Good Morning<br/>
+    <img src="../../images/1.jpg" width="300px" />
+  </div>
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test12.html</title>
+    <style>
+        .item {
+            width: 400px;
+            height: 150px;
+            border: 1px solid gray;
+        }
+        #item1 {
+            background-color: green;
+        }
+        #item2 {
+            /* background: linear-gradient(to bottom, #f00, #fff); */
+            /* background: linear-gradient(to top, #f00, #fff); */
+            /* background: linear-gradient(to right, #f00, #fff); */
+            /* background: linear-gradient(to left, #f00, #fff); */
+            background: linear-gradient(to left, #f00, #ff0);
+        }
+        #item3 {
+            background: linear-gradient(54deg, #00f,pink);
+        }
+        #item4 {
+            background: linear-gradient(to right, #f00, #0f0, #00f, pink);
+        }
+        #item5{
+            background: radial-gradient(circle, #fff, #f00);
+        }
+        #item6{
+            background: radial-gradient(#0f0 10%, #fff 30%, #f00 60%);
+        }
+        #item7{
+            background: radial-gradient(at left, #fff 30%, #f00 60%);
+        }
+        #item8{
+            background: radial-gradient(at right top, #fff, #f00);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            margin: 50px 0px; /*상하 여백, 좌우 여백 없음*/
+        }
+        td {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid gray;
+            /* background: linear-gradient(to bottom, #f00, #fff); */
+        }
+        thead{
+            background: linear-gradient(to right, #f0f, #fff);
+        }
+
+    </style>
+</head>
+<body>
+    <h2>그라데이션 효과</h2>
+    <div id="item1" class="item">연습</div>
+    <div id="item2" class="item">연습</div>
+    <div id="item3" class="item">연습</div>
+    <div id="item4" class="item">연습</div>
+    <div id="item5" class="item">연습</div>
+    <div id="item6" class="item">연습</div>
+    <div id="item7" class="item">연습</div>
+    <div id="item8" class="item">연습</div>
+    <hr/>
+    <table>
+        <thead>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>321</td>
+            <td>322</td>
+            <td>323</td>
+            <td>324</td>
+        </tr>
+    </table>
+</body>
+</html>

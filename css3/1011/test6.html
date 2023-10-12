@@ -1,79 +1,75 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test6.html</title>
-    <style>
-        .container {
-            width: 780px;
-            margin: 0 auto;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test6.html</title>
+  <style>
+    .container {
+      width: 780px;
+      margin: 0 auto;
+    }
 
-        .myform {
-            width: 350px;
-        }
+    .myform {
+      width: 350px;
+    }
 
-        #myform1 { 
-            width: 350px;
-            float: left;
+    #myform1 {
+      float: left;
+    }
+    #myform2 {
+      float: right;
+    }
 
-        }
-        #myform2 { 
-            width: 350px;
-            float: right;
-        }
-
-        .btn {
-            padding: 8px;
-            font-size: 14px;
-            background-color: cadetblue;
-            color: white;
-            cursor: pointer;
-        }
-
-    </style>
+    .btn {
+      padding: 8px;
+      font-size: 14px;
+      background-color: chocolate;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <div class="container"> 
-        <form name="myform" class="myform" id="myform1">
-            <fieldset>
-                <legend>회 원 가 입</legend>
-                <p>
-                    <label for="mid">아이디</label>
-                    <input type="text" name="mid" id="mid" autofocus />
-                </p>
-                <p>
-                    <label for="pwd">비밀번호</label>
-                    <input type="password" name="pwd" id="pwd" autofocus />
-                </p>
-                <p>
-                    <!-- 구버전
-                    <input type="submit" value="전송" class="btn" /> 
-                    <input type="reset" value="다시입력" class="btn" />
-                    -->
-                    <button type="submit" class="btn">전송</button> <!--신버전-->
-                    <button type="reset" class="btn">다시입력</button>
-                </p>
-            </fieldset>
-        </form> 
-        <form name="myform" class="myform" id="myform2">
-            <fieldset>
-                <legend>회 원 가 입2</legend>
-                <p>
-                    <label for="mid">아이디</label>
-                    <input type="text" name="mid" id="mid" autofocus />
-                </p>
-                <p>
-                    <label for="pwd">비밀번호</label>
-                    <input type="password" name="pwd" id="pwd" autofocus />
-                </p>
-                <p>
-                    <input type="submit" value="전송" class="btn" />
-                    <input type="reset" value="다시입력" class="btn" />
-                </p>
-            </fieldset>
-        </form> 
-    </div>
+  <div class="container">
+    <form name="myform" class="myform" id="myform1">
+      <fieldset>
+        <legend>회 원 가 입</legend>
+        <p>
+          <label for="mid">아이디</label>
+          <input type="text" name="mid" id="mid" autofocus />
+        </p>
+        <p>
+          <label for="pwd">비밀번호</label>
+          <input type="password" name="pwd" id="pwd" />
+        </p>
+        <p>
+          <!--
+          <input type="submit" value="전송" class="btn" />
+          <input type="reset" value="다시입력" class="btn" />
+          -->
+          <button type="submit" class="btn">전송</button>
+          <button type="reset" class="btn">다시입력</button>
+        </p>
+      </fieldset>
+    </form>
+    <form name="mbcform" class="myform" id="myform2">
+      <fieldset>
+        <legend>회 원 가 입2</legend>
+        <p>
+          <label for="mid">아이디</label>
+          <input type="text" name="mid" id="mid" autofocus />
+        </p>
+        <p>
+          <label for="pwd">비밀번호</label>
+          <input type="password" name="pwd" id="pwd" />
+        </p>
+        <p>
+          <input type="submit" value="전송" class="btn" />
+          <input type="reset" value="다시입력" class="btn" />
+        </p>
+      </fieldset>
+    </form>
+  </div>
 </body>
-</html> 
+</html>

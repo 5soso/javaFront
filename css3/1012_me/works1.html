@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>works1.html</title>
+    <style>
+        body {
+            margin: 30px;
+            padding: 0px;
+        }
+        /*로그인창*/
+        .container1 {
+            width: 450px;
+            margin: 20px 0px;
+            background-color: white;
+            border: 2px solid gray; 
+        }
+        
+        .login {
+            width: 450px;
+            padding: 20px 0px 15px 10px; 
+        }
+        label, input[type="submit"] {
+            font-family: 굴림;
+            font-weight: bolder;
+        }
+        #loginTitle {
+            width: 60px;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            /* border: 1px solid black; */
+            font-family: 굴림;
+            font-size: large;
+            font-weight: bolder;
+            color: rgb(1, 92, 240);
+            position: absolute;
+            top: 20px;
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            /* border: 1px solid gray; */
+            border-color: rgb(199, 199, 199);
+        }
+        #loginBtn {
+            background: linear-gradient(to top, white, rgb(163, 162, 162) 10%, white);
+            border-radius: 5px;
+        }
+
+        /*회원가입창*/
+        .container2 {
+            width: 450px;
+            margin: 0px;
+            background-color: white;
+            border: 2px solid gray; 
+        }
+        .join {
+            margin: 10px;
+            padding: 30px;
+            /* border: 1px solid black; */
+            
+        }
+
+        .joinLabel {
+            /* border: 1px solid red; */
+            margin: 0px;
+            padding: 0px;
+            float: left;
+        }
+
+        #required {
+            color: red;
+        }
+
+        .joinBox {
+            float: right;
+            margin: 0px auto;
+            /* padding: 0px 10px 0px 0px; */
+        }
+
+        .joinTitle {
+            width: 80px;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            font-family: 굴림;
+            font-size: large;
+            font-weight: bolder;
+            text-align: center;
+            color: rgb(0, 91, 238);
+            position: absolute;
+            top: 100px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="login">
+            <div id="loginTitle">로그인</div>
+            <form>
+                <label for="loginMid">아이디</label>
+                <input type="text" name="loginMid" id="loginMid" size="10" autofocus />
+                <label for="loginPwd">비밀번호</label>
+                <input type="password" name="loginPwd" id="loginPwd" size="10"/>
+                <input type="submit" value="로그인" id="loginBtn" />
+            </form>
+        </div>  
+    </div>
+
+    <div class="container2">    
+        <div class="join"> 
+            <div class="joinTitle">가입하기</div>
+            <form class="joinForm">
+                <label for="joinMid" class="joinLabel">아이디 <span id="required">*</span></label>
+                <input class="joinBox" type="text" name="joinMid" id="joinMid" placeholder="4자리~10자리" minlength="4" maxlength="10"  size="15" autofocus required/><br/>
+                <label for="joinPwd" class="joinLabel">비밀번호 <span id="required">*</span></label>
+                <input class="joinBox type="password" name="joinPwd" id="joinPwd" placeholder="4자리~10자리" minlength="4" maxlength="10"  size="15" required/><br/>
+                <label for="joinPwd2" class="joinLabel">비밀번호 확인 <span id="required">*</span></label>
+                <input class="joinBox type="password" name="joinPwd2" id="joinPwd2" placeholder="비밀번호 확인" minlength="4" maxlength="10"  size="15" required/><br/>
+                <label for="name" class="joinLabel">이름 <span id="required">*</span></label>
+                <input class="joinBox type="text" name="name" id="name" placeholder="이름" minlength="1" maxlength="10"  size="15" required/><br/>
+                <label for="email" class="joinLabel">메일 주소 <span id="required">*</span></label>
+                <input class="joinBox type="email" name="email" id="email" placeholder="메일" size="15" required/><br/>
+                <label for="tel" class="joinLabel">전화번호</label>
+                <input class="joinBox type="text" name="tel" id="tel" placeholder="010-0000-0000" size="15"/><br/>
+            </form>
+        </div>   
+    </div>
+
+
+
+</body>
+</html>

@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test8.html</title>
-    <style> 
-        .container {
-            width: 400px;
-            /* height: 300ox; */
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid gray;
-            text-align: center;
-            padding: 20px;
-            color: white;
-        }
-        thead, th {
-            background-color: aqua;
-            color: brown;
-            height: 20px;
-        }
-        tfoot {
-            background-color: rgb(255, 0, 0);
-            height: 20px;
-        }
-        tbody {
-            background-color: rgb(30, 201, 0);
-        }
-        tr:hover {
-            background-color: burlywood;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test8.html</title>
+  <style>
+    table {
+      width: 400px;
+      /* height: 300px; */
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid gray;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+    }
+    thead, th {
+      background-color: rgb(186, 233, 233);
+      color: rgb(160, 96, 96);
+      height: 50px;
+    }
+    tfoot {
+      height: 50px;
+      background-color: rgb(224, 184, 184);
+    }
+    tbody {
+      background-color: rgb(171, 148, 193);
+    }
+    tr:hover {
+      background-color: burlywood;
+    }
+  </style>
 </head>
 <body>
-    <h2>표 연습</h2>
-    <div class="container">
-        <table>
-            <thead>
-                <tr>
-                    <th>1</th>
-                    <th class="dd">2</th>
-                    <th>3</th>
-                </tr>
-            <tbody>
-                <tr>
-                    <td>4</td>
-                    <td class="dd">5</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td class="dd">8</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td class="dd">5</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td class="dd">8</td>
-                    <td>9</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>10</td>
-                    <td class="dd">11</td>
-                    <td>12</td>
-                </tr>
-            </tfoot>
-            </thead>
-        </table>
-    </div>
+  <h2>표 연습</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>1</th>
+        <th class="dd">2</th>
+        <th>3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>4</td>
+        <td class="dd">5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td class="dd">8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td class="dd">5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td class="dd">8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td class="dd">5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td class="dd">8</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>10</td>
+        <td class="dd">11</td>
+        <td>12</td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test10.html</title>
+    <style>
+        #imgParent {
+            width: 500px;
+            margin: 0px auto;
+            position: relative;
+        }
+        #sign {
+            position: absolute; /*기존문서에 abs을 주면 부모는 body가 된다*/
+            /* top: 10px;
+            left: 20px; */
+            right: 10px;
+            bottom: 10px;
+            color: red;
+            font-size: 30pt;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h2>그림에 글자 배치하기</h2>
+    <div id="imgParent">
+        <img src="../../images/10.jpg" width="500px" id="imgChild" />
+        <div id="sign">생일을 축하합니다.</div>
+    </div>
+</body>
+</html>

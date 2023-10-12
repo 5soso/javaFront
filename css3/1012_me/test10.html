@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test9.html</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: grid;
+
+            grid-template-areas: 
+            'item1 item1'
+            'item2 item3'
+            'item4 item4';
+
+            grid-template-rows: 100px 1fr 80px;
+            grid-template-columns: 200px 1fr;
+
+            margin: 0px 50px;
+            height: 500px;
+        }
+
+        .item {
+            font-size: 30pt;
+            font-weight: bolder;
+            font-family: 궁서;
+            text-align: center;
+        }
+
+        .item1 {
+            grid-area: item1;
+            background-color: green;
+            /* height: 100px; */
+        }
+
+        .item2 {
+            grid-area: item2;
+            background-color: yellow;
+            /* height: 400px; */
+        }
+
+        .item3 {
+            grid-area: item3;
+            background-color: pink;
+            /* height: 400px; */
+        }
+
+        .item4 {
+            grid-area: item4;
+            background-color:gray;
+            /* height: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Header</div>
+        <div class="item item2">aside</div>
+        <div class="item item3">content</div>
+        <div class="item item4">Footer</div>
+    </div>
+</body>
+</html>
