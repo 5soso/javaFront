@@ -2,68 +2,47 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>menu5.html</title>
   <style>
-    /* css reset 설정 */
+    /* CSS */
     body, ul, li {
       margin: 0px;
       padding: 0px;
       list-style: none;
     }
-    /* 앵커태그 초기 설정 */
     a {
-      /* text-decoration: none; */
       text-decoration: inherit;
       color: white;
     }
 
-    /* 주메뉴 설정작업 */
+    /* 주메뉴 */
     nav {
       text-align: center;
     }
-
     nav ul {
-      background-color: #000;
+      background-color: black;
+      /* display: inline-block; */
     }
-
-    nav > ul {
+    nav ul li { /*화살표(>)가 아닌 공백이기 때문에 자식, 자손 모두 적용됨*/
       display: inline-block;
-      border-radius: 5px;
-      /* padding: 0px 10px; */
-    }
-    nav > ul > li {
-      display: inline-block;
+      position: relative; /*주메뉴는 무조건 relative로 주기*/
       width: 110px;
-      /* margin: 0px; */
-    }
-    /* nav > ul > li > a { */
-    nav li > a {
-      display: block;
       padding: 10px;
     }
-    /* nav > ul > li:hover > a { */
-    nav li:hover > a {
-      background-color: rgb(67, 168, 251);
-      color: #fff;
-      border-radius: 5px;
+    nav ul li:hover {
+      background-color: rgb(131, 131, 131);
     }
-
-    /*부메뉴의 부메뉴가 있을 때는 'nav li' */
-    nav > ul > li {
-      position: relative;
-    }
-
-    /* 서브 메뉴 설정 */
-    nav ul li ul {
+    /* 부메뉴 */
+    nav ul li ul { /*하위 항목*/
       display: none;
-      position: absolute;
-      width: 110px;
-      border-radius: 5px;
+      position: absolute; /*부메뉴는 absulute로 주기. 부모인 주메뉴(relative)를 기준으로 위치지정*/
+      top: 40px;
+      left: 0px;
     }
-    nav li:hover > ul {
-      display: block;
+
+    nav ul li:hover ul { /*상위 항목에 '마우스를 올렸을 때'의 부메뉴에 속성적용*/
+      display: block; /*inline-block으로 주면 안 됨.. 블록으로 줘야지 한영역을 차지함 */
     }
   </style>
 </head>
