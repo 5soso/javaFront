@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam2.html</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
+        let res = "";
+        function formCheck() {
+            let name = document.getElementById("name").value;
+
+
+            res += "성명 : " + name;
+            // res += age;
+
+            document.getElementById("res").value = res;
+        }
+
+        function submitCheck() {
+            document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">');
+            document.write('<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"><\/script>');
+            document.write('<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">')
+            document.write("<h3>" + res + "</h3>");
+            document.write("<input type='button' value='돌아가기' onclick='location.reload()' class='btn w3-lime'/>");
+        }
+    </script>
+</head>
+<body>
+<p><br/></p>
+<div class="container">
+    <form name="myform">
+        <div class="row">
+            <div class="col">
+                <label for="name">성명</label>
+                <input type="text" name="name" id="name" value="홍길동" class="form-control" autofocus />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="button" value="가입하기" onclick="formCheck()" class="btn w3-lime" />
+            </div>
+        </div>
+        <hr/>
+        <div>
+            <textarea name="res" id="res" rows="5" class="form-control"></textarea>
+        </div>
+        <div>
+            <input type="button" value="전송하기" onclick="submitCheck()" class="btn w3-lime form-control mt-2" />
+        </div>
+    </form>
+</div>
+</body>
+</html>

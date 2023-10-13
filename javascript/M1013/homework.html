@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homework.html</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script>
+    let res ="";
+    function joinCheck() {
+      let mid = "홍길동";
+      // document.getElementById("mid").value;
+      console.log(mid+"1");
+      let pwd = document.getElementById("pwd").value;
+      let pwd2 = document.getElementById("pwd2").value;
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let tel = document.getElementById("tel").value;
+      let address = document.getElementById("address").value;
+      // let gender = document.getElementById("gender").vaule;
+      // let etc = document.getElementById("etc").vaule;
+
+      res += "아이디 : " + mid;
+      res += "비밀번호 : " + pwd;
+      res += "비밀번호 확인 : " + pwd2;
+      res += "이름 : " + name;
+      res += "이메일 : " + email;
+      res += "연락처 : " + tel;
+      res += "주소 : " + address;
+      // res += "추천인 아이디: " + etc;
+
+      document.getElementById("res").value = res;
+    }
+
+    function submitCheck() {
+            document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">');
+            document.write('<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"><\/script>');
+            document.write('<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">')
+            document.write("<h3>" + res + "</h3>");
+            document.write("<input type='button' value='돌아가기' onclick='location.reload()' class='btn w3-lime'/>");
+        }
+  </script>
+  <style>
+    span {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<p><br/></p>
+<div class="container">
+  <h2 style="text-align: center;">회원가입</h2>
+  <p style="color: gray; font-weight: bold; font-size: 5px; text-align: right; margin-top: 30px;"><span>*</span>필수입력사항</p>
+  <hr style="height: 2px; background-color: black;"/>
+    <form>
+      <div class="row">
+        <div class="col">
+          <label for="mid">아이디<span>*</span></label>
+          <input type="text" name="mid" id="mid" placeholder="이름을 입력해주세요" minlength="4" maxlength="15" size="15" autofocusclass="form-control" />
+          <input type="button" value="중복확인" class="form-control btn btn-outline-secondary mt-2" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="pwd">비밀번호<span>*</span></label>
+          <input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해주세요" minlength="4" maxlength="15" size="15" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="pwd2">비밀번호확인<span>*</span></label>
+          <input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 한번 더 입력해주세요" minlength="4" maxlength="15" size="15"class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="name">이름<span>*</span></label>
+          <input type="text" name="name" id="name" placeholder="이름을 입력해주세요" minlength="1" maxlength="10" size="15" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="email">이메일<span>*</span></label>
+          <input type="mail" name="email" id="email" placeholder="예: hkd@green.com" minlength="5" maxlength="30" size="30" class="form-control"/>
+          <input type="button" value="중복확인" class="form-control btn btn-outline-secondary mt-2" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="tel">휴대폰<span>*</span></label>
+          <input type="text" name="tel" id="tel" placeholder="숫자만 입력해주세요." size="12" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="address">주소<span>*</span></label>
+          <input type="text" name="address" id="address" placeholder="주소를 입력하세요" class="form-control"/>
+        </div>
+      </div>
+      <p>배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
+      <div class="rdGender">
+        <label for="gender">성별</label>
+        <input type="radio" name="gender" id="gender1" value="남자" class="form-control"/>남자 
+        <input type="radio" name="gender" id="gender2" value="여자" class="form-control"/>여자
+        <input type="radio" name="gender" id="gender3" value="여자" checked class="form-control" />선택안함
+      </div>
+      <!-- <div class="birthDay">
+        생년월일 박스 만들기
+      </div> -->
+      <!-- <div class="rdEtc">
+        <label for="gender">추가입력사항</label>
+        <input type="radio" name="etc" id="etc1" value="친구초대 추천인 아이디" class="form-control"/>친구초대 추천인 아이디 
+        <input type="radio" name="etc" id="etc2" value="참여 이벤트명" class="form-control"/>참여 이벤트명
+      </div>
+      <div> -->
+        <input type="submit" value="가입하기" onclick="joinCheck()" class="form-control btn w3-purple mt-5" />
+      </div>
+      <p><br/><br/></p>
+      <!--출력하기-->
+      <div>
+        <textarea name="res" id="res" rows="5" readonly class="form-control"></textarea>
+      </div>
+      <!--전송하기-->
+      <div>
+        <input type="button" value="전송하기" onclick="submitCheck()" class="btn w3-lime form-control mt-2" />
+      </div>
+    </form>
+</div>
+</body>
+</html>
