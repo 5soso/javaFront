@@ -26,7 +26,7 @@
     }
     nav ul li { /*화살표(>)가 아닌 공백이기 때문에 자식, 자손 모두 적용됨*/
       display: inline-block;
-      position: relative; /*주메뉴는 무조건 relative로 주기*/
+      position: relative; /*주메뉴는 무조건 relative로 지정*/
       width: 110px;
       padding: 10px;
     }
@@ -36,7 +36,7 @@
     /* 부메뉴 */
     nav ul li ul { /*하위 항목*/
       display: none;
-      position: absolute; /*부메뉴는 absulute로 주기. 부모인 주메뉴(relative)를 기준으로 위치지정*/
+      position: absolute; /*부메뉴는 absulute로 지정. 바로 앞의 상위 요소인 부모 주메뉴(relative)를 기준으로 위치지정*/
       top: 40px;
       left: 0px;
     }

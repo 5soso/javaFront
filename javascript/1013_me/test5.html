@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test5.html</title>
+  <script>
+    //호이스팅(hoisting) : 변수를 어느 곳에나 선언해도 사용할 수 있다. 메모리에 변수만 올라가있음. (자바는 안 됨)
+
+    console.log("sbs :"+sbs); // 변수 선언 전에 사용함. sbs :undefined 는 에러가 아님. 타입이다.
+
+    var sbs; //
+    
+    function calc() {
+      sbs = mbc + 50;
+      console.log("sbs :",sbs);
+    }
+
+    var mbc = 100;
+  </script>
+</head>
+<body>
+  <h2>변수의 선언</h2>
+  <input type="button" value="계산" onclick="calc()" />
+</body>
+</html>

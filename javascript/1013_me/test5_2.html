@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test5_2.html</title>
+  <script>
+    //호이스팅(hoisting) : 
+
+    'use strict'; // !변수 선언하고 쓰라는 명령어!
+
+    let sbs; // let : 일반 변수를 무조건 선언하고 쓰라는 선언문. 
+    const kbs = 10; // const : 값을 한번 지정하면 바꿀 수 없는 선언문. 자바의 static final과 같음.
+    //let과 const의 공통점 : 변수 사용하기 전에 선언을 해야한다.
+    //var은 호이스팅이 되므로 사용 자제
+
+    cjb = 200;
+
+    //kbs =200;
+    console.log("sbs :"+sbs); 
+    console.log("kbs :"+kbs); 
+    console.log("cjb :"+cjb); 
+    console.log("seoul :"+seoul); 
+    
+    //let sbs;
+    //var sbs;
+    var seoul; 
+    
+    function calc() {
+      sbs = mbc + 50;
+      console.log("sbs :",sbs);
+    }
+
+    var mbc = 100;
+  </script>
+</head>
+<body>
+  <h2>변수의 선언</h2>
+  <input type="button" value="계산" onclick="calc()" />
+</body>
+</html>
