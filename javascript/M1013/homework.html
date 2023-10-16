@@ -12,6 +12,7 @@
   <script>
     let res ="";
     function joinCheck() {
+      alert('멈출까요?');
       let mid = "홍길동";
       // document.getElementById("mid").value;
       console.log(mid+"1");
@@ -60,7 +61,7 @@
       <div class="row">
         <div class="col">
           <label for="mid">아이디<span>*</span></label>
-          <input type="text" name="mid" id="mid" placeholder="이름을 입력해주세요" minlength="4" maxlength="15" size="15" autofocusclass="form-control" />
+          <input type="text" name="mid" id="mid" placeholder="이름을 입력해주세요" minlength="4" maxlength="15" size="15"  required autofocusclass="form-control" />
           <input type="button" value="중복확인" class="form-control btn btn-outline-secondary mt-2" />
         </div>
       </div>
@@ -117,7 +118,7 @@
         <input type="radio" name="etc" id="etc2" value="참여 이벤트명" class="form-control"/>참여 이벤트명
       </div>
       <div> -->
-        <input type="submit" value="가입하기" onclick="joinCheck()" class="form-control btn w3-purple mt-5" />
+        <input type="button" value="가입하기" onclick="joinCheck()" class="form-control btn w3-purple mt-5" />
       </div>
       <p><br/><br/></p>
       <!--출력하기-->
@@ -126,7 +127,7 @@
       </div>
       <!--전송하기-->
       <div>
-        <input type="button" value="전송하기" onclick="submitCheck()" class="btn w3-lime form-control mt-2" />
+        <input type="submit" value="전송하기" onclick="submitCheck()" class="btn w3-lime form-control mt-2" />
       </div>
     </form>
 </div>
