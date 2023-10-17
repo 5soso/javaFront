@@ -17,7 +17,7 @@
 
       if(dan.trim() == "") {
         alert("계산할 단을 입력하세요?");
-        document.myform.dan.focus(); //myfrom도 name으로 읽어온 것. dan도 name으로 읽어온 것이다.
+        document.myform.dan.focus();
         return;
       }
       
@@ -26,9 +26,8 @@
       for(let i=1; i<=10; i++) {
         str += `${dan} * ${i} = ${dan * i}<br/>`;
       }
-      // document.getElementById("demo").innerHTML = str;
+
       demo.innerHTML = str;
-      
     }
   </script>
 </head>
@@ -42,7 +41,7 @@
       <input type="number" name="dan" value="1" class="form-control"/>
     </p>
     <p>
-      <input type="button" value="출력" onclick="gugudan()" class="btn btn-success form-control"/> <!-- form-control 사용 : 폼형식에 맞게, 크게 보기 위해서 -->
+      <input type="button" value="출력" onclick="gugudan()" class="btn btn-success form-control"/>
     </p>
   </form>
   <hr/>

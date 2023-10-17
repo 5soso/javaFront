@@ -15,8 +15,8 @@
     function addressCheck() {
       let address = document.getElementById("address").value;
 
-      console.log("address.indexOf('https://') : ",address.indexOf("https://")); //idexOf는 인덱스번호를 읽음. 
-      console.log("address.includes('https://') : ",address.includes("https://")); //includes는 반환값을 true(값 있음), false(값 없음) 로 반환한다. 
+      console.log("address.indexOf('https://') : ",address.indexOf("https://"));
+      console.log("address.includes('https://') : ",address.includes("https://"));
       console.log("address.length : ",address.length);
 
       // if(address == "" || address == "https://") {
@@ -28,7 +28,6 @@
       else {
         //location.replace(address);
         location.href = address;
-        alert("ok");
       }
     }
   </script>
@@ -39,7 +38,7 @@
   <h4>이동할 주소를 입력후 이동버튼을 클릭하세요</h4>
   <div>
     <label for="address">이동할 주소</label>
-    <input type="url" name="address" id="address" value="https://" class="mt-2 mb-2 form-control" autofocus />
+    <input type="url" name="address" id="address" value="https://" placeholder="이동할 주소를 입력해주세요" class="mt-2 mb-2 form-control" autofocus />
     <input type="button" value="이동" onclick="addressCheck()" class="btn btn-success form-control"/>
   </div>
 </div>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test11_날짜함수.html</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script>
+    'use strict';
+
+    function lastDateCheck() {
+      let yy = document.getElementById("year").value.trim();
+      let mm = document.getElementById("month").value.trim();
+      let dd ;
+
+      let lastDate = new Date(yy, mm, 0);
+      
+      demo.innerHTML = yy+"년"+ mm+"월" +lastDate.getDate()+"일";
+    }
+  </script>
+</head>
+<body>
+  <p><br/></p>
+  <div class="container">
+  <h2>날짜함수 연습</h2>
+  <div>년도와 날짜를 입력후 '마지막일자출력' 버튼을 누르면 demo에 입력한 '년-월'과 마지막 일자를 출력하시오.</div>
+  <form class="myform mt-3">
+  <div>
+    <input type="number" name="year" id="year" class="from-control"  />년
+    <input type="number" name="month" id="month" minlength="1" maxlength="2" />월
+  </div>
+  <div>
+    <input type="button" value="마지막일자출력" onclick="lastDateCheck()" class="mt-2 btn btn-info" />
+  </div>
+</form>
+  <hr/>
+  <div id="demo"></div>
+</div>
+</body>
+<script src="test11.js"></script>
+</html>

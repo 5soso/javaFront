@@ -12,14 +12,15 @@
 
       if(document.getElementById("gender1").checked) gender = "남자"; //id로 라디오버튼 체크하기
       if(document.getElementById("gender2").checked) gender = "여자";
+      //else gender = "여자";
 
-      demo.innerHTML = "<font color='red'><b>"+gender+"</b></font>";
+      demo.innerHTML = "<font color='orange'><b>"+gender+"</b></font>";
     }
   </script>
 </head>
 <body>
   <h2>라디오 버튼값 체크하기</h2>
-  <form name ="myform">
+  <form name="myform">
     <div>
       <input type="radio" name="gender" id="gender1" value="남" />남자
       <input type="radio" name="gender" id="gender2" value="여" checked />여자

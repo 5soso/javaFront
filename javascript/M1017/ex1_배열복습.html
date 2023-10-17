@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  'use strict';
+  const arr1 = new Array();
+  console.log("arr1 : ", arr1);
+  console.log("arr1타입 : ", typeof(arr1));
+  console.clear();
+
+  const arr2 = ['가','나','다','라'];
+  console.log("arr2 : ", arr2);
+  console.log("arr2타입 : ", typeof(arr2));
+  console.log("arr2길이 : ",  arr2.length);
+  console.log("arr2의 마지막 요소 : ", arr2.length-1);
+  console.log("arr2의 마지막 요소 : ", arr2[arr2.length-1]); //배열변수명[배열변수명.length-1];
+  for(let i=0; i<arr2.length; i++) {
+    console.log(`arr2[${i}] : ${arr2[i]}`);
+  }
+  for(let arr of arr2){
+    console.log(arr);
+  }
+  for(let arr in arr2){
+    console.log(arr);
+  }
+  console.clear();
+
+// forEach문을 이용한 반복 출력 : 객체명.foeEach(function ([데이터],[index],[객체명]){});
+let strData = '', strIndex='';
+arr2.forEach(function(data,i,arr2) {
+  strData += data + "/";
+  strIndex += i + "/";
+  // console.log(arr2);
+});
+
+let strData2 = '';
+arr2.forEach((data,i,arr2) => {
+  strData2 += data + "/";
+  strIndex += i + "/";
+  console.log(arr2);
+});
+console.log(strData2);
+console.log(strIndex);
+
+let strData3='';
+arr2.forEach((data,i,arr2) => {
+  strData3 += data + "/";
+});
+console.log(strData3);
+
+let strData4 = '';
+arr2.forEach((data,i,arr2) => strData4 += data + "/");
+console.log(strData4);
+
+</script>
+<body>
+<p><br/></p>
+<div class="container">
+  <h2>배열복습</h2>
+</div>
+</body>
+</html>

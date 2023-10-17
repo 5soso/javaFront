@@ -11,34 +11,36 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script>
     'use strict';
-    
-    function clac() {
-      // let su = myform.su.value; 배열로 처리하기..
+
+    function calc() {
+      // let su = myform.su.value;
       let su = Number(document.getElementsByName("su")[0].value);
       su += Number(document.getElementsByName("su")[1].value);
       su += Number(document.getElementsByName("su")[2].value);
       su += Number(document.getElementsByName("su")[3].value);
       su += Number(document.getElementsByName("su")[4].value);
-      
+
+
       demo.innerHTML = `텍스트 박스 값의 합 : <font color="red"><b>${su}</b></font>`;
     }
   </script>
-  </head>
+</head>
 <body>
-  <p><br/></p>
-  <div class="container">
-  <h2>여러개의 값을 선택하기</h2>
+<p><br/></p>
+<div class="container">
+  <h4>여러개의 값을 선택하기</h4>
   <form name="myform">
     수1 <input type="number" name="su" value="1" class="form-control" /><br/>
     수2 <input type="number" name="su" value="2" class="form-control" /><br/>
     수3 <input type="number" name="su" value="3" class="form-control" /><br/>
     수4 <input type="number" name="su" value="4" class="form-control" /><br/>
     수5 <input type="number" name="su" value="5" class="form-control" /><br/>
-    <!-- <input type="button" value="계산" onclick="clac()" /> 아래 형식과 같은 의미--> 
-    <button type="button" onclick="clac()" class="form-control btn btn-success">계산</button>
+    <!-- <input type="button" value="계산" onclick="calc()" /> -->
+    <button type="button" onclick="calc()" class="btn btn-success form-control">계산</button>
   </form>
   <hr/>
   <div id="demo"></div>
 </div>
 </body>
 </html>
+

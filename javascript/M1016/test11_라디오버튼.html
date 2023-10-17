@@ -8,7 +8,7 @@
     'use strict';
 
     function fCheck() {
-      let gender = myform.gender.value; //name으로 체크
+      let gender = myform.gender.value;
 
       if(gender == '남') gender = "남자";
       else gender = "여자";
@@ -19,10 +19,10 @@
 </head>
 <body>
   <h2>라디오 버튼값 체크하기</h2>
-  <form name ="myform">
+  <form name="myform">
     <div>
       <input type="radio" name="gender" id="gender1" value="남" />남자
-      <input type="radio" name="gender" id="gender2" value="여" checked/>여자
+      <input type="radio" name="gender" id="gender2" value="여" checked />여자
       <input type="button" value="성별체크" onclick="fCheck()" />
     </div>
   </form>

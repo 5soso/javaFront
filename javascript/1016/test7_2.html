@@ -36,8 +36,8 @@
       let keyCode = window.event.keyCode;
 
       console.log("keyCode : ", keyCode);
-      // if(keyCode == 82)  alert("r키를 눌렀습니다.") : 소문자 영문을 대문자 영문 아스키코드로 인식한다. 숫자는 소문자영문으로 인식한다.
-      if(keyCode == 13) addressCheck(); //엔터키 번호가 13번이라서, 13번일 때, addressCheck()함수를 호출해라.
+
+      if(keyCode == 13) addressCheck();
     }
   </script>
 </head>
@@ -47,7 +47,7 @@
   <h4>이동할 주소를 입력후 이동버튼을 클릭하세요</h4>
   <div>
     <label for="address">이동할 주소</label>
-    <input type="url" name="address" id="address" onkeydown="enterCheck()" value="https://" class="mt-2 mb-2 form-control" autofocus /> <!--onkeydown() : 엔터키를 눌렀을 때-->
+    <input type="url" name="address" id="address" onkeydown="enterCheck()" value="https://" placeholder="이동할 주소를 입력해주세요" class="mt-2 mb-2 form-control" autofocus />
     <input type="button" value="이동" onclick="addressCheck()" class="btn btn-success form-control"/>
   </div>
 </div>

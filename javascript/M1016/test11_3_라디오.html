@@ -9,8 +9,12 @@
 
     function fCheck() {
       let gender;
+
       if(document.getElementsByName("gender")[0].checked) gender = "남자"; //클래스 배열로 처리
       if(document.getElementsByName("gender")[1].checked) gender = "여자";
+
+      //if(document.getElementById("gender2").checked) gender = "여자";
+      //else gender = "여자";
 
       demo.innerHTML = "<font color='green'><b>"+gender+"</b></font>";
     }
@@ -18,7 +22,7 @@
 </head>
 <body>
   <h2>라디오 버튼값 체크하기</h2>
-  <form name ="myform">
+  <form name="myform">
     <div>
       <input type="radio" name="gender" value="남" />남자
       <input type="radio" name="gender" value="여" checked />여자
