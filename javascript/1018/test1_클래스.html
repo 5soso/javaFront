@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test1_클래스.html</title>
+  <script>
+    'use strict'; //변수를 선언해서 사용할 것(27번 라인). 필드는 상관없음.
+
+    //클래스 만들기 : 접근제한자(생략가능) + 클래스 + 클래스명 + 중괄호{} + 필드명 
+    class Member {
+      //필드명
+      name;
+      age;
+
+      //생성자 생성
+      //constructor() {} //기본생성자와 같은 역할
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      //메소드
+      memberPrint() {
+        let job = '학생'; //변수
+        console.log("2.성명 : ", this.name, "나이 : ", this.age ); // +는 문자 연산. ,는 별도로 봄
+      }
+    }
+
+    //클래스 호출
+    let member = new Member("홍길동",25);
+
+    console.log("1.성명 : ", member.name, "나이 : ", member.age);
+    member.memberPrint(); //메소드를 함수처럼 표시함
+
+  </script>
+</head>
+<body>
+  <h2>클래스 연습</h2>
+</body>
+</html>

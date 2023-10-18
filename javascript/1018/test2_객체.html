@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test2_객체.html</title>
+  <script>
+    'use strict';
+
+    //객체 생성 : new 연산자
+    let obj = new Object();
+    obj.name = '홍길동'; //문자
+    obj.age = 25; //수
+    obj.jumsu = [100,90,80]; //객체
+    obj.myFunc = function() { //함수는 익명함수로 
+      console.log('성명', this.name); //자바에서 자기의 필드명 읽어올 때 = this 사용
+    };
+    obj.myObj = {
+      tel : '010-1234-5678',
+      address : '청주시 흥덕구 사창동'
+    }; //객체 생성할 때는 =이 아니라 : 콜론 쓰기
+
+    console.log('obj객체:', obj);
+  </script>
+</head>
+<body>
+  <h2>객체(클래스) 연습</h2>
+</body>
+</html>

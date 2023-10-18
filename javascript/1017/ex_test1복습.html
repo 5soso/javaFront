@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex_test1.html</title>
+  <script>
+    'use strict';
+
+    let obj = new Object();
+    obj.name = '김말숙';
+    obj.age = 30;
+    obj.like = ['운동', '영화', '음악'];
+    obj.myFunc = function() {
+      console.log('나이', this.age);
+    }
+    console.log("obj 객체 : ", obj);
+    obj.myObj = {
+      tel : '010-1234-5678',
+      job : '회사원'
+    }
+    console.log('obj객체', obj);
+
+  </script>
+</head>
+<body>
+  <h2>객체(클래스) 연습 복습</h2>
+</body>
+</html>
