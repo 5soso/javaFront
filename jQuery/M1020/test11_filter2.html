@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">연
+  <title>test11_filter.html</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script>
+    'use strict';
+
+    $(function() {
+      $('.container div').css('color','lightgray')
+        .filter((index, data) => {
+          return index % 2 == 0; //index번지는 0번부터.. nth는 1번
+        }).css('color','orange')
+        .filter('.test2').css('fontSize','20pt'); //test2 kbs는 왜 적용 안 됨?..
+    });
+
+  </script>
+</head>
+<body>
+<p><br/></p>
+<div class="container">
+  <h2>서시(序詩)</h2>
+  <p>작가 : <span id="user">윤동주</span></p>
+  <div class="yeon">1연</div>
+  <div>산모퉁이를 돌아 논가 외딴 우물을 <span class="test">홀로</span> 찾아가선</div>
+  <div><span class="main">가만히</span> 들여다봅니다.</div>
+  <div class="yeon">2연</div>
+  <div><span class="yeon">우물</span> 속에는 달이 밝고 구름이 흐르고 <span class="cc">하늘이</span> 펼치고</div>
+  <div>파아란 바람이 <span class="test">불고</span> 가을이 있읍니다.</div>
+  <div class="yeon">3연</div>
+  <div>그리고 한 사나이가 있읍니다.</div>
+  <div>어쩐지 그 사나이가 <span class="test main">미워져</span> 돌아갑니다.</div>
+  <div class="yeon">4연</div>
+  <div class="test2">돌아가다 생각하니 그 사나이가 <span class="test">가엾어집니다.</span></div>
+  <div>도로 가 들여다보니 사나이는 그대로 있읍니다.</div>
+  <div class="yeon">5연</div>
+  <div class="test2 kbs">다시 그 사나이가 미워져 돌아갑니다.</div>
+  <div>돌아가다 생각하니 그 사나이가 <span class="test main">그리워집니다.</span></div>
+  <div class="yeon">6연</div>
+  <div>우물 속에는 <span class="aa">밝고</span> 구름이 흐르고 하늘이 펼치고</div>
+  <div><span class="bb">파아란</span> 바람이 불고 가을이 있고</div>
+  <div><span class="test">추억처럼</span> 사나이가 있읍니다.</div>
+  <hr/>
+  <span>안녕하세요(span)</span>
+  <div id="demo">안녕하세요</div>
+</div>
+</body>
+</html>
