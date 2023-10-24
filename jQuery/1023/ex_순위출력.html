@@ -40,9 +40,23 @@
       let arr = [a1, a2, a3];
       console.log(arr);
       let max = Math.max.apply(null,arr);
-      console.log(max);
+      console.log('max : ', max);
       let min = Math.min.apply(null,arr);
-      console.log(min);
+      console.log('min : ',min);
+
+      for(let i=0; i<arr.length; i++) {
+        if(arr[i] == max) {
+          let winner = arr[i];
+          console.log('1등 : ', winner);
+
+          $('demo').html = winner;
+        }
+        else if(arr[i] == min) {
+          let looser = arr[i];
+          console.log('3등 : ', looser);
+          $('demo').html = looser;
+        }
+      }
 
       $('#demo').html = `1등 : ${max}, 2등 : 3등: ${min} `;
     });
@@ -62,3 +76,5 @@
 </div>
 </body>
 </html>
+
+<!--다른 사람들 코드 다 써보기..-->
